@@ -1,0 +1,15 @@
+server:
+  #端口号
+  port: 8081
+
+# spring jpa data 配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://115.159.152.139:3306/testblog
+    username: root
+    password: Cxq@123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

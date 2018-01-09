@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    # 开发环境 dev ; 生产环境 prod ; 测试环境 test
+    active: dev
+
+  # 文件上传
+  servlet:
+    multipart:
+      enabled: true # 默认支持文件上传
+      file-size-threshold: 0 # 支持文件写入磁盘
+      location:  # 上传文件的临时目录
+      max-file-size: 1Mb # 最大支持请求大小
+      max-request-size: 10Mb # 最大支持请求大小
+
+logging:
+  config: classpath:logback-ctoedu.xml
+
+
+# 网站标题和版本
+siteinfo:
+  siteName: 程序员的成长之路dev
+siteVersion: v0.01
+
