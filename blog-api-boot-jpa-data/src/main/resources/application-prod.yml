@@ -2,14 +2,19 @@ server:
   #端口号
   port: 8082
 
-# spring jpa data 配置
 spring:
+  # 数据源
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://115.159.152.139:3306/testblog
     username: root
     password: Cxq@123456
+  # jpa data
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
+  # redis
+  redis:
+    host: localhost
+    port: 6379
