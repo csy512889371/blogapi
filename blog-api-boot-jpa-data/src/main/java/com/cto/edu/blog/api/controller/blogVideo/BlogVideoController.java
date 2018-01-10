@@ -5,6 +5,9 @@ import com.cto.edu.blog.entity.blogVideo.BlogVideo;
 import com.cto.edu.blog.facade.blogVideo.service.BlogVideoFacade;
 import com.cto.edu.common.model.search.Searchable;
 import com.cto.edu.common.vo.ViewerResult;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
+@Api(value = "video", description = "视频信息")
 @RestController
 @RequestMapping("/api/blog/video")
 public class BlogVideoController {
@@ -24,6 +28,8 @@ public class BlogVideoController {
     private BlogVideoFacade blogVideoFacade;
 
     @SuppressWarnings("unchecked")
+    @ApiOperation(value = "分页查询视频", notes = "根据主题id分页查询主题下的视频信息")
+    @ApiImplicitParam(name = "obj", value = "{\"topicId\":\"3\",\"number\":0,\"size\":1}", required = true, dataType = "JSONObject")
     @PostMapping(value = "/findForPageByTopic")
     public ViewerResult findForPageByTopic(@RequestBody JSONObject obj) {
         ViewerResult result = new ViewerResult();
@@ -53,7 +59,8 @@ public class BlogVideoController {
     }
 
 
-    @SuppressWarnings("unchecked")
+    @ApiOperation(value = "分页查询视频", notes = "分页查询主题下的视频信息")
+    @ApiImplicitParam(name = "obj", value = "{\"number\":0,\"size\":1}", required = true, dataType = "JSONObject")
     @PostMapping(value = "/findAllForPage")
     public ViewerResult findAllForPage(@RequestBody JSONObject obj) {
         ViewerResult result = new ViewerResult();
@@ -72,6 +79,8 @@ public class BlogVideoController {
         return result;
     }
 
+    @ApiOperation(value = "分页查询视频", notes = "根据视频名称分页查询主题下的视频信息")
+    @ApiImplicitParam(name = "obj", value = "{\"name\":\"js\",\"number\":0,\"size\":1}", required = true, dataType = "JSONObject")
     @SuppressWarnings("unchecked")
     @PostMapping(value = "/findForPageByName")
     public ViewerResult findForPageByName(@RequestBody JSONObject obj) {
@@ -97,6 +106,8 @@ public class BlogVideoController {
         return result;
     }
 
+    @ApiOperation(value = "更新视频查看次数", notes = "根据视频的id将视频的查看次数加1")
+    @ApiImplicitParam(name = "obj", value = "{\"videoId\":\"1\"}", required = true, dataType = "JSONObject")
     @SuppressWarnings("unchecked")
     @PostMapping(value = "/viewVideo")
     public ViewerResult viewVideo(@RequestBody JSONObject obj) {
@@ -113,6 +124,8 @@ public class BlogVideoController {
         return result;
     }
 
+    @ApiOperation(value = "查询视频信息", notes = "根据视频的id查询视频信息")
+    @ApiImplicitParam(name = "obj", value = "{\"id\":\"1\"}", required = true, dataType = "JSONObject")
     @PostMapping(value = "/findById")
     public ViewerResult findById(@RequestBody JSONObject obj) {
         ViewerResult result = new ViewerResult();

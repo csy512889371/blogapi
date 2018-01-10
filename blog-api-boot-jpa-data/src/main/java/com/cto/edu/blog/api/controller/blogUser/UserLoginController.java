@@ -13,19 +13,18 @@ import com.cto.edu.blog.facade.user.service.UmsUserFacade;
 import com.cto.edu.common.utils.DateUtil;
 import com.cto.edu.common.utils.NetworkUtil;
 import com.cto.edu.common.vo.ViewerResult;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-/**
- * user api
- */
+
+@Api(value = "userLogin", description = "用户登录")
 @RestController
 @RequestMapping("/api/user/login")
 public class UserLoginController {
@@ -39,12 +38,9 @@ public class UserLoginController {
     @Resource
     private UmsLogFacade umsLogFacade;
 
-    /**
-     * login
-     * @param obj
-     * @return
-     */
-    @RequestMapping(value = "", method = RequestMethod.POST)
+    @ApiOperation(value = "登录", notes = "根据用户名、密码登录")
+    @ApiImplicitParam(name = "obj", value = "{\"appSn\":\"\",\"username\":\"\",\"password\":\"\",\"remember\":true}", required = true, dataType = "JSONObject")
+    @PostMapping(value = "")
     public ViewerResult login(@RequestBody JSONObject obj, HttpServletRequest request) {
         ViewerResult result = new ViewerResult();
         UmsUser user = null;

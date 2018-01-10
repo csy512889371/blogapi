@@ -1,8 +1,12 @@
 package com.cto.edu.blog.api.controller.common;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -11,12 +15,13 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 
+@Api(value = "file", description = "文件")
 @Controller
 @RequestMapping(value = "/api/file")
 public class FileController {
     private static final Logger logger = LoggerFactory.getLogger(FileController.class);
 
-    @RequestMapping(value = "upload")
+    @PostMapping(value = "upload")
     @ResponseBody
     public String upload(@RequestParam("eduFile") MultipartFile file) {
         if (file.isEmpty()) {
