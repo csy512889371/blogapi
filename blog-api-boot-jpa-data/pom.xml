@@ -26,6 +26,7 @@
 		<guava.version>15.0</guava.version>
 		<druid.version>1.0.26</druid.version>
 		<fastjson.version>1.2.41</fastjson.version>
+		<springfox-swagger2.version>2.2.2</springfox-swagger2.version>
 	</properties>
 
 	<dependencies>
@@ -95,6 +96,18 @@
 			<scope>runtime</scope>
 		</dependency>
 
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-swagger2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-swagger2.version}</version>
+		</dependency>
+
 		<!--common end-->
 	</dependencies>
 
@@ -103,6 +116,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -144,6 +160,5 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
 
 </project>
