@@ -3,6 +3,17 @@ spring:
     # 开发环境 dev ; 生产环境 prod ; 测试环境 test
     active: dev
 
+  # 指定 cache 产品类型
+  cache:
+    type: redis
+
+  # spring session使用存储类型
+  session:
+    store-type: redis
+    redis:
+      flush-mode: # Sessions 刷新模式
+      namespace: # Namespace for keys used to store sessions.
+
   # 文件上传
   servlet:
     multipart:
