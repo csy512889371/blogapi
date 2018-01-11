@@ -9,6 +9,18 @@ spring:
     url: jdbc:mysql://115.159.152.139:3306/testblog
     username: root
     password: Cxq@123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    druid:
+      initial-size: 8 #初始化连接大小
+      min-idle: 5 #最小空闲连接数
+      max-active: 10 #最大连接数
+      query-timeout: 6000 #查询超时时间
+      transaction-query-timeout: 6000 #事务查询超时时间
+      remove-abandoned-timeout: 1800 #关闭空闲连接超时时间
+      filter-class-names: stat
+      filters: stat,config
+
   # jpa data
   jpa:
     hibernate:

@@ -13,9 +13,13 @@
 * h2 内存数据库
 * swagger2 api接口文档
 * httpclient 调用rest访问
+* spring-boot-starter-aop 切面
+* druid 数据源
+
 
 [springboot文章](https://github.com/csy512889371/blogapi/tree/master/blog-api-boot-jpa-data/note)
 [swagger](http://localhost:8081/swagger-ui.html)
+[数据库监控](http://localhost:8081/druid)
 
 ## 启动
 java -jar blog-api-boot-jpa-data-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
@@ -29,7 +33,7 @@ java -jar blog-api-boot-jpa-data-0.0.1-SNAPSHOT.jar --spring.profiles.active=dev
     待续
 
 
-
+   
 
 
 
