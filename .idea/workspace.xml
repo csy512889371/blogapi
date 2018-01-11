@@ -46,6 +46,11 @@
       <find>template</find>
       <find>setCleanupCron</find>
       <find>spring-session.version</find>
+      <find>core</find>
+      <find>druid.version</find>
+      <find>EnableConfigurationProperties</find>
+      <find>filters</find>
+      <find>filter</find>
     </findStrings>
     <replaceStrings>
       <replace>PostMapping</replace>
@@ -69,17 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/CustomCorsConfiguration.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/ObjectUtils.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisBusiness.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisObjectClient.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/core/jwt/service/UmsJwtService.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/constant/SysRoleConstant.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/vo/UserVO.java" />
-        <option value="$PROJECT_DIR$/blog-api-mongodb/note/springboog-mongodb使用.md" />
-        <option value="$PROJECT_DIR$/blog-api-mongodb/note/springBoot-mongodb使用.md" />
-        <option value="$PROJECT_DIR$/blog-api-mongodb/pom.xml" />
         <option value="$PROJECT_DIR$/blog-api-mongodb/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/blog-api-mongodb/src/main/java/com/cto/edu/blog/bean/RoncooUser.java" />
         <option value="$PROJECT_DIR$/blog-api-mongodb/src/main/java/com/cto/edu/blog/bean/UserInfo.java" />
@@ -99,9 +93,7 @@
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/BlogUserController.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/UserLoginController.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogVideo/BlogVideoController.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/BlogApiBootJpaDataApplication.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot10 使用 Caching-EhCache.md" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-prod.yml" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/spring boot 11 使用 Caching-Redis.md" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springBoot12 使用异步消息服务-JMS（ActiveMQ）.md" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot13使用异步消息服务-AMQP（RabbitMQ）.md" />
@@ -112,14 +104,27 @@
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/siteInfo/SiteInfoController.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/test/java/com/cto/edu/BlogApiBootJpaDataApplicationTests.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/SessionConfig.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/pom.xml" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisSessionConfig.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot使用Spring Session实现集群-redis.md" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisCacheConfiguration.java" />
-        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-test.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot如何进行远程调试.md" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 18 生产准备-基于HTTP的监控.md" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/configuration/DruidDataSourceProperties.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/configuration/DruidDataSourceconfig.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/filter/DruidWebStatFilter.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/servlet/DruidStatViewServlet.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/configuration/DruidConfiguration.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/META-INF/additional-spring-configuration-metadata.json" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/configuration/DruidDataSourceProperties.java" />
         <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/configuration/DruidConfiguration.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-prod.yml" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-test.yml" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/BlogApiBootJpaDataApplication.java" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/pom.xml" />
+        <option value="$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/druid-bean.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -146,10 +151,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="136" />
-    <option name="y" value="229" />
+    <option name="x" value="280" />
+    <option name="y" value="282" />
     <option name="width" value="1090" />
-    <option name="height" value="627" />
+    <option name="height" value="526" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -195,6 +200,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,13 +209,16 @@
               <item name="blogapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogapi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blogapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogapi" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-api-boot-jpa-data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -223,15 +233,19 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="last_opened_file_path" value="D:/用户目录/我的文档/GitHub/xbin-store-cloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cto.edu" />
       <recent name="com.cto.edu.demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\resources" />
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\java\com\cto\edu\common\utils\druid" />
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\resources\templates" />
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\java\com\cto\edu\config" />
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\note" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cto.edu.blog.bean" />
@@ -240,12 +254,8 @@
       <recent name="com.cto.edu.blog.api.controller.blogUser" />
       <recent name="com.cto.edu.common.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\resources\templates" />
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\src\main\java\com\cto\edu\config" />
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data\note" />
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-mongodb\src\main\java\com\cto\edu\blog\bean" />
-      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-mongodb\src\main\java\com\cto\edu\blog\component" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\ideaWorkspaceJTIISM\blogapi\blog-api-boot-jpa-data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -467,7 +477,8 @@
       <workItem from="1515550722221" duration="14499000" />
       <workItem from="1515585192218" duration="4259000" />
       <workItem from="1515627669224" duration="2662000" />
-      <workItem from="1515634207818" duration="11790000" />
+      <workItem from="1515634207818" duration="22327000" />
+      <workItem from="1515674383344" duration="4089000" />
     </task>
     <servers />
   </component>
@@ -504,7 +515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55880000" />
+    <option name="totallyTimeSpent" value="70506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,7 +527,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="229" width="1090" height="627" extended-state="1" />
+    <frame x="280" y="282" width="1090" height="526" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -525,14 +536,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29228243" sideWeight="0.2647504" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41754916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13918306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49186993" sideWeight="0.6505295" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685422" sideWeight="0.6505295" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22495896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54351395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3038835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32718447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -541,7 +552,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42857143" sideWeight="0.73524964" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52545154" sideWeight="0.73524964" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -595,332 +606,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/RequestAttribute.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.jar!/io/swagger/annotations/ApiImplicitParams.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.jar!/io/swagger/annotations/Api.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogTopic/BlogTopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/BlogUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/UserLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogVideo/BlogVideoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="63" column="15" lean-forward="false" selection-start-line="63" selection-start-column="15" selection-end-line="63" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/common/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/Spring Boot中使用Swagger2构建强大的RESTful API文档.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="293">
-            <caret line="194" column="56" lean-forward="true" selection-start-line="194" selection-start-column="19" selection-end-line="194" selection-end-column="56" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springBoot 九-mongodb使用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot10 使用 Caching-EhCache.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2225">
-            <caret line="89" column="3" lean-forward="true" selection-start-line="89" selection-start-column="3" selection-end-line="89" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/core/jwt/service/UmsJwtService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.2.RELEASE/spring-data-redis-2.0.2.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/CustomCorsConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.2.RELEASE/spring-data-redis-2.0.2.RELEASE.jar!/org/springframework/data/redis/cache/RedisCache.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.2.RELEASE/spring-data-redis-2.0.2.RELEASE.jar!/org/springframework/data/redis/cache/RedisCacheManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="37" column="75" lean-forward="false" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.2.RELEASE/spring-data-redis-2.0.2.RELEASE.jar!/org/springframework/data/redis/cache/RedisCacheWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.2.RELEASE/spring-data-redis-2.0.2.RELEASE.jar!/org/springframework/data/redis/cache/RedisCacheConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/SpringConfigDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.jar!/org/springframework/cache/annotation/CachingConfigurer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.2.RELEASE/spring-context-5.0.2.RELEASE.jar!/org/springframework/cache/annotation/CachingConfigurerSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="56" lean-forward="false" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/spring boot 11 使用 Caching-Redis.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1393">
-            <caret line="60" column="1" lean-forward="false" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-            <folding>
-              <marker date="1515586247795" expanded="true" signature="407:450" ph="/**...*/" />
-              <marker date="1515586247795" expanded="true" signature="494:753" ph="{...}" />
-              <marker date="1515586247795" expanded="true" signature="649:681" ph="{...}" />
-              <marker date="1515586247795" expanded="true" signature="650:680" ph="{...}" />
-              <marker date="1515586247795" expanded="true" signature="756:924" ph="/**...*/" />
-              <marker date="1515586247795" expanded="true" signature="974:1224" ph="{...}" />
-              <marker date="1515586247795" expanded="true" signature="1009:1220" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springBoot12 使用异步消息服务-JMS（ActiveMQ）.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="957">
-            <caret line="57" column="24" lean-forward="true" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot13使用异步消息服务-AMQP（RabbitMQ）.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="725">
-            <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogCategory/BlogCategoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="163" column="17" lean-forward="false" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 14调用REST服务-如何使用代理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="275">
-            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/templates/mail/findPW.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="75" lean-forward="true" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 15发送邮件-使用模板邮件并实现多账号轮询发送.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="111" column="30" lean-forward="true" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
-            <folding>
-              <marker date="1515630947434" expanded="true" signature="66:182" ph="..." />
-              <marker date="1515630947434" expanded="true" signature="425:468" ph="/**...*/" />
-              <marker date="1515630947434" expanded="true" signature="469:536" ph="@{...}" />
-              <marker date="1515630947434" expanded="true" signature="843:1369" ph="{...}" />
-              <marker date="1515630947434" expanded="true" signature="1470:1901" ph="{...}" />
-              <marker date="1515630947434" expanded="true" signature="1964:2062" ph="{...}" />
-              <marker date="1515630947434" expanded="true" signature="2103:2108" ph=" { " />
-              <marker date="1515630947434" expanded="true" signature="2147:2150" ph=" }" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/test/java/com/cto/edu/BlogApiBootJpaDataApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session/2.0.0.M2/spring-session-2.0.0.M2.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.BUILD-SNAPSHOT/spring-boot-autoconfigure-2.0.0.BUILD-20180110.095626-355.jar!/org/springframework/boot/autoconfigure/session/RedisSessionConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2323#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/SessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/BlogApiBootJpaDataApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/SessionConfig.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/session/spring-session-data-redis/2.0.0.RELEASE/spring-session-data-redis-2.0.0.RELEASE.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="101" column="28" lean-forward="false" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,31 +618,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisSessionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot使用Spring Session实现集群-redis.md">
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 16 使用Spring Session实现集群-redis.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-775">
@@ -974,10 +643,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 17如何进行远程调试.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="50">
+            <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -989,52 +664,342 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-prod.yml">
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/RedisSessionConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="175">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/note/springboot 18 生产准备-基于HTTP的监控.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="279">
+            <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-test.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="250">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/META-INF/spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/utils/druid/configuration/DruidDataSourceconfig.java" />
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/logback-ctoedu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogCategory/BlogCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="300">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogTopic/BlogTopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-923">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/BlogUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogUser/UserLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1073">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/blogVideo/BlogVideoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/common/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/core/blogCategory/service/BlogCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/core/blogCategory/repository/BlogCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/core/blogTopic/repository/BlogTopicRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/templates/mail/findPW.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/CustomCorsConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/JpaDataConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/org/springframework/boot/autoconfigure/jdbc/metadata/DataSourcePoolMetadataProvidersConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="19" column="51" lean-forward="false" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.0.M7/spring-boot-2.0.0.M7.jar!/org/springframework/boot/context/properties/ConfigurationProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/META-INF/additional-spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4025">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/META-INF/additional-spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.0.M7/spring-boot-autoconfigure-2.0.0.M7.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="94" column="47" lean-forward="false" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/common/model/SiteInfoProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/blog/api/controller/siteInfo/SiteInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+        <state relative-caret-position="265">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
           <folding>
-            <element signature="e#2783#2799#0" expanded="true" />
+            <element signature="e#2783#2799#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.26/druid-1.0.26.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="98" column="55" lean-forward="true" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
+        <state relative-caret-position="180">
+          <caret line="1129" column="16" lean-forward="false" selection-start-line="1129" selection-start-column="16" selection-end-line="1129" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/configuration/DruidDataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="219" column="22" lean-forward="false" selection-start-line="219" selection-start-column="22" selection-end-line="219" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+            <element signature="e#2205#2206#0" expanded="true" />
+            <element signature="e#6000#6001#0" expanded="true" />
+            <element signature="e#6043#6044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/configuration/DruidConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.26/druid-1.0.26.jar!/com/alibaba/druid/support/http/StatViewServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/filter/DruidWebStatFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/config/druid/servlet/DruidStatViewServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/java/com/cto/edu/BlogApiBootJpaDataApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/config/spring-aop.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/druid-bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="100">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-api-boot-jpa-data/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="149" column="29" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1042,8 +1007,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="244">
-            <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <first_editor relative-caret-position="725">
+            <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
             <folding />
           </first_editor>
           <second_editor />

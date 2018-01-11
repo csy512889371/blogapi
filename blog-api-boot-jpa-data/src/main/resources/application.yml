@@ -23,9 +23,12 @@ spring:
       max-file-size: 1Mb # 最大支持请求大小
       max-request-size: 10Mb # 最大支持请求大小
 
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #时间格式化
+    time-zone: Asia/Chongqing #时区设置
+
 logging:
   config: classpath:logback-ctoedu.xml
-
 
 # 网站标题和版本
 siteinfo:
