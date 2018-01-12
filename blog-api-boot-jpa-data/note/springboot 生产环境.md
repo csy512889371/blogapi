@@ -2,14 +2,15 @@
 
 
 注意事项
-1.去除不需要的 jar 
+
+> 1.去除不需要的 jar 
 * 开发工具jar：spring-boot-devtools
-2.
-监控一定要做好权限控制或者去除
+
+> 2.监控一定要做好权限控制或者去除
 * 控制jar：spring-boot-starter-actuator
 * druid的监控
 * swagger的接口
-3、打包，跳过测试
+> 3、打包，跳过测试
 * maven：cleanpackage -Dmaven.test.skip=true
 
 * 脚本
