@@ -3,6 +3,7 @@ package com.cto.edu.blog.entity.blogVideo;
 import com.cto.edu.blog.entity.blogVideo.enums.EssenceEnum;
 import com.cto.edu.blog.entity.blogVideo.enums.SoloEnum;
 import com.cto.edu.common.entity.UUIDEntity;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -72,6 +73,7 @@ public class BlogVideo extends UUIDEntity<String> implements Serializable {
      * 发布时间
      */
     @Column(name = "PUBLIC_TIME")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date publicTime;
 
     /**
