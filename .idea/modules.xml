@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/blog-api-boot-jpa-data/blog-api-boot-jpa-data.iml" filepath="$PROJECT_DIR$/blog-api-boot-jpa-data/blog-api-boot-jpa-data.iml" />
-      <module fileurl="file://$PROJECT_DIR$/blogapi.iml" filepath="$PROJECT_DIR$/blogapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctoedu-spring-cloud-learn/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/ctoedu-spring-cloud-learn/microservice-discovery-eureka.iml" />
     </modules>
   </component>
 </project>
